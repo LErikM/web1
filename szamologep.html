@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Számológép</title>
+    <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="div"><ul >
+        <li class="t"><a href="index.html">Főoldal</a></li>
+        <li class="t"><a href="keplink.html">Kép + link</a></li>
+        <li class="t"><a href="lista.html">Lista</a></li>
+        <li class="t"><a href="orarend.html">Órarend</a></li>
+        <li class="t"><a href="urlap.html">Ürlap</a></li>
+        <li class="t"><a href="evszakok.html">Évszakok</a></li>
+        <li class="t"><a class="active" href="szamologep.html">Számológép</a></li>
+      </ul>
+    </div>
+
+
+
+<fieldset>
+    <legend>Számol</legend>
+    <br>
+        <input type="number" name="sz" id="a" placeholder="szam1">
+        <input type="number" name="sz" id="b" placeholder="szam2">
+        <input type="text" name="sz" id="c" placeholder="eredmény">
+            <br>
+        <input type="submit" value="+" onclick="ad()">
+        <input type="submit" value="-" onclick="kiv()">
+        <input type="submit" value="*" onclick="szor()">
+        <input type="submit" value="/" onclick="oszt()">
+        <input type="reset" value="törlés">
+</fieldset>  
+
+<script>
+            function ad(){
+                    c.value= Number(a.value)+ Number(b.value)
+            }
+            function kiv(){
+                    c.value= Number(a.value)- Number(b.value)
+            }
+            function szor(){
+                    c.value= Number(a.value)* Number(b.value)
+            }
+            function oszt(){
+                    c.value= Number(a.value)/ Number(b.value)
+            }
+</script>
+</body>
+</html>
